@@ -5,7 +5,7 @@ export default function Layout( { children, home } ) {
   return (
     <div>
       <Head>
-        <title>Basic Next.js App</title>
+        <title>Aidan's Basic Next.js App</title>
       </Head>
       <header>
         <nav>

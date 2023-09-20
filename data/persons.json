@@ -26,5 +26,12 @@
     "phone": "123-456-7800",
     "birthdate": "01/01/0001",
     "id": 4
+  },
+  { 
+    "name": "Adam the Unoriginal",
+    "email": "adam@genericgarden.org",
+    "phone": "123-456-7890",
+    "birthdate": "02/02/0002",
+    "id": 5
   }
 ]
