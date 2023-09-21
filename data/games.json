@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "owner": 4,
+    "game": "Minecraft"
+  },
+  {
+    "id": 2,
+    "owner": 3,
+    "game": "Terraria"
+  },
+  {
+    "id": 3,
+    "owner": 3,
+    "game": "Factorio"
+  },
+  {
+    "id": 4,
+    "owner": 2,
+    "game": "Fallout"
+  },
+  {
+    "id": 5,
+    "owner": 1,
+    "game": "Skyrim"
+  },
+  {
+    "id": 6,
+    "owner": 1,
+    "game": "Starfield"
+  }
+]
