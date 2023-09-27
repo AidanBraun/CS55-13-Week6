@@ -1,5 +1,5 @@
-import Layout from '../components/layout';
-import { getAllIds, getData } from '../lib/data';
+import Layout from '../../components/layout';
+import { getAllIds, getData } from '../../lib/data-firebase';
 
 // define a getStaticProps() function to have next.js retrieve data to use for the dynamic page
 // - this name is defined by next.js
@@ -16,7 +16,7 @@ export async function getStaticProps( { params } ) {
 // define a getStaticPaths() function to tell next.js all valid URLs: 1,2,3,4 
 // - this name is defined by next.js
 export async function getStaticPaths() {
-  const paths = getAllIds();
+  const paths = await getAllIds();
   return {
     paths,
     fallback: false
@@ -33,7 +33,9 @@ export default function Entry( { itemData } ) {
           <h5 className="card-subtitle mb-2 text-body-secondary">{itemData.phone}</h5>
           <p className="card-text">{itemData.birthdate}</p>
           <a href="#" className="card-link">{itemData.email}</a>
-          <h6>Favorite Games</h6>
+          <h6>Favorite Game</h6>
+          <h5 className="card-subtitle mb-2 text-body-secondary">{itemData.game}</h5>
+          
           <ol>
             {itemData.games && itemData.games.map(
                 ({id, game}) => (
